@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS arrow functions</title>
+</head>
+<body>
+
+    <h2>Arrow functions usage</h2>
+    <button id="demo">click me</button>
+    <script>
+        setTimeout( () => console.log("hello there!"), 3000);
+
+
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // in arrow funcs we don't need to call function word
+        // return statement is assumed
+        // no curly braces are needed
+        let sum2 = (a, b) => a + b;
+
+
+        function isPositive(num) {
+            return num >= 0;
+        }
+        // if single parameter - no brackets() are needed
+        let isPositive2 = num => num >= 0;
+
+        document.getElementById("demo").addEventListener('click', () => console.log("button clicked"));
+
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+        const squares = numbers.map(num => num**2);
+        console.log(`Numbers: ${numbers}\nSquared: ${squares}`);
+        
+        const evens = numbers.filter(num => num % 2 == 0);
+        console.log(`Numbers: ${numbers}\nEven numbers: ${evens}`);
+
+        const total = numbers.reduce((accumulator, element) => accumulator + element)
+        console.log(`Total sum of array elements is ${total}`);
+
+    </script>
+</body>
+</html>

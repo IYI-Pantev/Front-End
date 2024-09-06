@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS in and of</title>
+</head>
+<body>
+    
+
+    <script>
+        const person = { name: "John", age: 30, city: "New York" };
+
+        // for (let key in person) {
+        //     console.log(key);            // Outputs: name, age, city
+        //     console.log(person[key]);    // Outputs: John, 30, New York
+        // }
+        for (let x of Object.values(person)) {
+            console.log(x);
+        }
+
+        const data = ["apple", "pear", "cherry", "watermelon"];
+
+        for (k in data) {
+            console.log(`${Number(k) + 1}: ${data[k]}`);
+        }
+
+    </script>
+</body>
+</html>

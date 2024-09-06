@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            row-gap: 1em;
+            column-gap: 1em;
+        }
+        .wrapper div {
+            background-color: #f1ecec;
+            padding: 1em;
+        }
+        .wrapper div:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deleniti optio tempora eos eius perferendis praesentium possimus necessitatibus doloremque ipsam totam doloribus quidem, reiciendis, sed, nam atque magnam facere sequi ipsum et aperiam. Eius itaque ut voluptatem nam esse dolor, distinctio facere natus molestias rerum magni nemo atque alias corrupti at laudantium quam, deleniti maxime sed debitis pariatur? Laborum quidem non maxime a amet deleniti voluptate nobis, ut ducimus unde corporis! Tempora dignissimos labore quod ullam sequi eveniet vel reiciendis!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat mollitia error cum qui accusantium quis omnis fuga aliquam autem ex vero odio et ad earum esse, sed deserunt nobis.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deleniti optio tempora eos eius perferendis praesentium possimus necessitatibus doloremque ipsam totam doloribus quidem, reiciendis, sed, nam atque magnam facere sequi ipsum et aperiam. Eius itaque ut voluptatem nam esse dolor, distinctio facere natus molestias rerum magni nemo atque alias corrupti at laudantium quam, deleniti maxime sed debitis pariatur? Laborum quidem non maxime a amet deleniti voluptate nobis, ut ducimus unde corporis! Tempora dignissimos labore quod ullam sequi eveniet vel reiciendis!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quaerat mollitia error cum qui accusantium quis omnis fuga aliquam autem ex vero odio et ad earum esse, sed deserunt nobis.
+        </div>
+
+    </div>
+
+</body>
+</html>

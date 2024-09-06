@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 201</title>
+
+    <style>
+
+        .box {
+            height: 20px;
+            border: 1px solid blue;
+        }
+
+        /*Adjacent selector*/
+        .box + .box {
+            background-color: red;
+        }
+        
+        .box:hover {
+            background-color: blueviolet;
+            border: 1px solid rgb(10, 10, 213);
+        }
+
+        .dontselect {
+            /* background-color: aqua; */
+        }
+        .box:nth-child(3) {
+            background-color: yellow;
+            color: black;
+        }
+        .dontselect:hover {
+            background-color: aqua;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+   <div id="parent">
+    <div class="box" >1</div>
+    <div class="box" >2</div>
+    <div class="box dontselect" >some info</div>
+    <div class="box" >4</div>
+    <div class="box" >5</div>
+   </div>
+   <div class="box">This isn't blue box</div>
+
+</body>
+</html>

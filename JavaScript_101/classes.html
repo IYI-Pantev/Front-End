@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS classes</title>
+</head>
+<body>
+    <script>
+    class Person {
+        // like __init__() in python
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        //not greet function () {}
+        greet() {
+            console.log(`Hello my name is ${this.name} and I'm ${this.age} years old.`);
+        }
+
+    }
+
+    const john = new Person('John', 30);
+    john.greet();
+
+    class Employee extends Person {
+        constructor(name, age, job) {
+            super(name, age); // calls the parent class constructor
+            this.job = job;
+        }
+
+        describeJob () {
+            console.log(`I work as a ${this.job}`);
+        }
+    }
+
+    const nick = new Employee('Nick', 29, 'Web Developer');
+    nick.greet();
+    nick.describeJob();
+
+    </script>
+</body>
+</html>

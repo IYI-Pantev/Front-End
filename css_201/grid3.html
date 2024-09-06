@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .wrapper div {
+            background-color: #f1ecec;
+            padding: 1em;
+            }
+        .wrapper div:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: white;
+            
+        }
+        .nested div {
+            background-color: azure;
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi sunt exercitationem repudiandae, illo error, doloribus ipsam eius quidem modi voluptas quaerat quisquam atque tempora molestiae eum fuga aperiam expedita?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur optio corrupti earum autem nesciunt omnis. Eligendi culpa perferendis, eius quasi voluptate delectus architecto ipsam in aliquid asperiores id est.
+        </div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi sunt exercitationem repudiandae, illo error, doloribus ipsam eius quidem modi voluptas quaerat quisquam atque tempora molestiae eum fuga aperiam expedita?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi sunt exercitationem repudiandae, illo error, doloribus ipsam eius quidem modi voluptas quaerat quisquam atque tempora molestiae eum fuga aperiam expedita?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente excepturi sunt exercitationem repudiandae, illo error, doloribus ipsam eius quidem modi voluptas quaerat quisquam atque tempora molestiae eum fuga aperiam expedita?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iste asperiores sit assumenda sint, modi qui facilis exercitationem rerum incidunt? Beatae adipisci magnam nihil, laboriosam deserunt quibusdam tenetur reprehenderit hic!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates mollitia ex provident distinctio. Minima dignissimos at omnis cupiditate, sunt porro mollitia odit eum tenetur consequuntur vel et inventore! Obcaecati, beatae!
+        </div>
+
+    </div>
+
+</body>
+</html>

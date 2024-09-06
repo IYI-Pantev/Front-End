@@ -1,0 +1,7 @@
+#bordering {
+    border: 3px solid blue;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}

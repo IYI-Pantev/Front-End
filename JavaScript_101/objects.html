@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    <h1>JS Objects</h1>
+    <h3>methods usage</h3><hr>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 9685,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            },
+            infoID: function() {
+                return this.lastName + "-" + this.id;
+            }
+        };
+
+        document.getElementById("demo").innerHTML = 
+        `citizen name: ${person.fullName()}, fingerpintID: ${person.infoID()}`; 
+
+        // displaying objects ways
+
+        // let text = "";
+
+        const values = Object.values(person).filter(value => typeof value !== "function");
+
+        // text += values
+
+        document.getElementById("demo2").innerHTML = values;
+
+        // forEach
+
+        // Object.entries(person).forEach(([key, value]) => {
+        //     console.log(`${key}: ${value}`);
+        // });
+
+        
+
+    </script>
+</body>
+
+</html>

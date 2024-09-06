@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars fans</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            display: inline-block;
+            width: 350px;
+            height: 400px;
+            margin: 10px;
+            box-shadow: 10px 10px 10px 3px rgb(231, 226, 122);
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(79, 216, 90);
+            color: black;
+        }
+
+        button:hover {
+            background-color: yellow;
+        }
+
+        h1 {
+            color: azure;
+            background-image: url("swPictures/stars.jpg");
+            height: 16%;
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        p {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Who's your lucky Star Wars character?</h1>
+    <button id="loadButton">Random pick</button>
+    <img  src=""  id="randomImage" alt="Star Wars character">
+    <p id="p-info"></p>
+
+
+    <script src="starWars.js"></script>
+</body>
+</html>

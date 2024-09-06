@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Sets</title>
+</head>
+<body>
+    <script>
+        const missedCalls = ["Kevin", "Stevie", "Gautam", "Janis", "Kevin", "Kevin","Stevie","Kevin", "Gautam"];
+        const uniqueCallers = new Set(missedCalls) 
+        // Set(4) {"Kevin", "Stevie", "Gautam", "Janis"}
+
+        //Or if I wanted an Array instead...
+        const uniqueCallersArr = [...new Set(missedCalls)]
+        //["Kevin", "Stevie", "Gautam", "Janis"]
+
+
+    </script>
+</body>
+</html>

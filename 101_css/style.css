@@ -1,0 +1,80 @@
+body {
+    background-image: url(wooden-background.jpg);
+}
+.blue {
+    font-style: italic;
+    color: aqua;
+    background-color: black;
+}
+
+.red {
+    font-style: oblique;
+    color: tomato;
+    background-color: antiquewhite;
+    /* opacity: 0.5; */
+}
+
+.Uppercase {
+    text-transform: uppercase;
+}
+#the-title {
+    text-decoration: underline;
+    text-align: center;
+}
+a {
+    color: chocolate;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: red;
+}
+
+/* a:visited {
+    color: purple;
+} */
+
+
+div.red-border {
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f00;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 3px;
+    
+}
+
+#box {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("yoda.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 60% 0 60%;
+    box-shadow: 10px 10px 10px 3px rgb(48, 171, 48);
+    margin: 10px;
+    opacity: 0.6;
+            
+}
+
+.inpic {
+    float: left;
+    margin: 10px;
+    border-width: 2px;
+    border-style: groove; 
+    border-color: chartreuse;
+    box-shadow: 0px 0px 10px 4px greenyellow;
+}
+
+body {
+    border: 3px solid black;
+    display: flow-root;
+}

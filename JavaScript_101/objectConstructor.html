@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+    <script>
+        function Person(first, last, age, city) {
+            this.firstName = first;
+            this.LastName = last;
+            this.age = age;
+            this.city = city;
+            this.nationality = "Bulgarian";
+        }
+
+        const myFather = new Person("John", "Doe", 50, "New York");
+        const myMother = new Person("Jane", "Doe", 48, "Paris");
+
+        myMother.firstName = "Diana";
+
+        myFather.job = "teacher";
+        myMother.job = "accountant";
+
+        Person.prototype.changeJob = function (new_job) {
+            this.job = new_job;
+        }
+
+        myMother.changeJob("programmer");
+
+        document.getElementById("demo").innerHTML = 
+        `My father is ${myFather.age}. My mother is ${myMother.nationality} and her name is ${myMother.firstName}.<br>
+        She works as ${myMother.job}`;
+    </script>
+</body>
+</html>
