@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+.env
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build and Dependency Files
+dist/
+build/
+.cache/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
