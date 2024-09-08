@@ -35,6 +35,8 @@
         document.getElementById("demo").innerHTML = 
         `My father is ${myFather.age}. My mother is ${myMother.nationality} and her name is ${myMother.firstName}.<br>
         She works as ${myMother.job}`;
+
+        if ('job' in myFather) console.log("object has job property");
     </script>
 </body>
 </html>
