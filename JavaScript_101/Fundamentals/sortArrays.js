@@ -40,7 +40,10 @@ for (let n of numbers)
     sum += n
 
 
-
+// Elegant way of finding the sum of
 const total = numbers.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0);
+
+// concise
+const total1 = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);

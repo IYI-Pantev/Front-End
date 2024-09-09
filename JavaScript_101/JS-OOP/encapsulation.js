@@ -14,11 +14,11 @@ function Circle(radius) {
         get: function() {
             return defaultLocation;
         },
-        set: function(value) {
-            if (!value.x || !value.y)
-                throw new Error('Invalid location.');
-            defaultLocation = value;
-        }
+        // set: function(value) {
+        //     if (!value.x || !value.y)
+        //         throw new Error('Invalid location.');
+        //     defaultLocation = value;
+        // }
     })
 
     this.draw = function() {
