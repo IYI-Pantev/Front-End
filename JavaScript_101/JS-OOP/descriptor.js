@@ -1,9 +1,13 @@
 let person = {name: 'Mosh'};
 
 Object.defineProperty(person, 'name', {
+    //data descriptors
     writable: false,
     enumerable: false,
     configurable: false
+    // access descriptors
+    //get: function() {return}
+    //set: function(value) {return}
 });
 
 person.name = 'John';
