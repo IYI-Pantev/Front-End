@@ -15,15 +15,15 @@ class BankAccount {
     }
   }
 
+  // Private method simulation using Symbols (not directly invocable)
+  [_privateMethod]() {
+    console.log(`This is a private method. Current balance is ${this[_balance]}.`);
+  }
   // Public method to get balance securely
   getBalance() {
     return this[_balance]; // Accessing the private symbol
   }
 
-  // Private method simulation using Symbols (not directly invocable)
-  [_privateMethod]() {
-    console.log(`This is a private method. Current balance is ${this[_balance]}.`);
-  }
 }
 
 const myAccount = new BankAccount('Alice', 100);

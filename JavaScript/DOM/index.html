@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Part 1</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(
+                0deg, 
+                rgba(76,166,236,1) 24%, 
+                rgba(81,190,170,1) 51%, 
+                rgba(0,162,83,0.9763364818583683) 79%
+            );
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 2px;
+            padding: 5px;
+            max-width: 550px;
+        }
+        #main-heading {
+            
+            color: white;
+            padding: 2px;
+        }
+        .list-items {
+            border-bottom: 1px solid black;
+            background-color: white;
+            color: black;
+            width: 200px;
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="main-heading">Favorite Movie Franchise</h1>
+        <ul>
+            <li class="list-items">The Matrix</li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Dune</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Game of thrones</li>
+        </ul>
+
+
+    </div>
+    <div>info</div>
+    <div>contact</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -16,3 +16,4 @@ function Circle(radius) {
     }
 }
 const circle = new Circle(10);
+circle.radius
