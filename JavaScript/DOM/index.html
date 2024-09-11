@@ -45,8 +45,9 @@
     
     <div class="container">
         <h1 id="main-heading">Favorite Movie Franchise</h1>
+        <!-- Space between -->
         <ul>
-            <li class="list-items">The Matrix</li>
+            <li class="list-items"><span>Neo</span>The Matrix</li>
             <li class="list-items">Star Wars</li>
             <li class="list-items">Dune</li>
             <li class="list-items">Lord of the Rings</li>
@@ -55,9 +56,15 @@
 
 
     </div>
-    <div>info</div>
-    <div>contact</div>
+    <div class="box-btn1">
+        <h3 class="box-heading">More info</h3>
+        <button onclick="alert('Gotta love JavaScript')" id="btn-info">info</button>
+    </div>
+    <div class="box-btn2">
+        <h3 class="box-heading">Contact us</h3>
+        <button  id="btn-contact">contact</button>
+    </div>
 
-    <script src="index.js"></script>
+    <script src="eventListeners.js"></script>
 </body>
 </html>
