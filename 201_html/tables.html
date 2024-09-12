@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Borders</title>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid blue;
+            border-collapse: collapse;
+            font-size: 1.5em;
+            padding: 10px
+        }
+        tfoot {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Expenses</th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+        </thead>
+        <tbody>
+        </tr>
+        <tr>
+            <td>Marketig</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Accountint</td>
+            <td>$150</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$250</th>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
