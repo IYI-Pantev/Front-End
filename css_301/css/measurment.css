@@ -1,0 +1,20 @@
+html {
+    /*  62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+
+#box {
+    background-color: gold;
+    /* 50% of the width of the parent */
+    width: 50vw;
+    height: 33vh;
+    
+}
+#box-2 {
+    background-color: blue;
+    /*  10 x font size of the current element  */
+    width: 15em;
+    /*  10x font size of the Root element */
+    height: 20rem;
+}

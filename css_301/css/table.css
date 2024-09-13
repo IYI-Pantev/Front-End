@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #427fef;
+    color: white;
+    padding: 5px;
+    
+}
+
+tr {
+    border-bottom: 1px solid #c4dcf3;
+
+}
+tr:nth-child(odd) {
+    background-color: #eef7ff;
+}
+
+#footer {
+    text-align: left;
+}
+#total-amount {
+    padding: 1px;
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+
+p {
+    color: gold;
+}
+#products {
+    background-color: black;
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 5px 10px;
+}
+.product {
+    color: gold;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+}
+/* select by atributes */
+a[href*="smartgardenhome.com"] {
+    color: green;
+}
+
+
+
+/* Pseudo elements */
+p::first-letter {
+    font-size: 140%;
+    color: whitesmoke;
+    background-color: black;
+}
+p::first-line {
+    font-style: italic;
+}
+p::after {
+    content: '...';
+}
+::selection {
+    background-color: rgb(113, 158, 224);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top right, tomato, rgb(255, 187, 14), rgb(42, 223, 255) 63%
+    );
+    margin: 15px;
+    /* text-align: center; */
+    color: white;
+    font-weight: bold;
+    /* line-height: 200px; */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    border-radius: 20px;
+    box-shadow: 0 0 20px yellow;
+}
+.box-2 {
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle at top left, rgb(21, 87, 218), yellow);
+    margin: 15px;
+}
+
+h1 {
+    color: deepskyblue;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: yellow;
+}
