@@ -1,0 +1,25 @@
+.container {
+    border: 3px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /*  or default: flex-start, center, space-evenly*/
+    align-items: flex-start; /*flex start/end */ 
+    flex-wrap: wrap;
+    align-content:flex-start;
+    height: 80vh;
+}
+
+.box {
+    /* flex-basis: 10rem; -- to change default size   */ 
+    /* flex-basis: 15rem; */
+    flex-shrink: 1;
+    flex-grow: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    margin: 1rem;
+}
+.box-one {
+    /* align-self: flex-start; */
+    /* flex-grow: 2;*/
+   } 
