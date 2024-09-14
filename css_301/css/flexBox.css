@@ -5,7 +5,7 @@
     justify-content: flex-end; /*  or default: flex-start, center, space-evenly*/
     align-items: flex-start; /*flex start/end */ 
     flex-wrap: wrap;
-    align-content:flex-start;
+    align-content: flex-start;
     height: 80vh;
 }
 
