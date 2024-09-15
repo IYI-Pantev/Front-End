@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%;
+  }
+body {
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background: url('/Images_styling/images/bg-sanfrancisco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+    background-attachment: fixed;
+}
+
+.meal {
+    width: 100vw;
+}

@@ -1,0 +1,34 @@
+.image-container {
+    position: relative;
+    display: inline-block; /* Adjust as needed */
+    width: 400px; /* Adjust size as needed */
+    height: 450px;
+    overflow: hidden; /* Ensures the content doesn't overflow */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease; /* Smooth transition for blur */
+  }
+  
+  .image-container .info-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for text appearance */
+  }
+  
+  .image-container:hover img {
+    filter: blur(5px); /* Blurs the image */
+  }
+  
+  .image-container:hover .info-text {
+    opacity: 1; /* Shows the text on hover */
+  }
