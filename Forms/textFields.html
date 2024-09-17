@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Fields</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="css/textFields.css" />
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        placeholder="name here"
+        list="countries"
+        autofocus
+        autocomplete="off"
+      />
+      <datalist id="countries">
+        <option data-value="01">Australia</option>
+        <option>Canada</option>
+        <option>India</option>
+        <option>USA</option>
+      </datalist>
+      <select name="" id="">
+        <optgroup label="Front-end courses">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">JavaScrip</option>
+        </optgroup>
+        <optgroup label="Back-end courses">
+          <option value="">Java</option>
+          <option value="">Node.js</option>
+          <option value="">Typescript</option>
+        </optgroup>
+      </select>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
+    </form>
+  </body>
+</html>
