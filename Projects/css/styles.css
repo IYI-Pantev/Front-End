@@ -1,3 +1,4 @@
+/* --- --- --- Color Palette --- --- --- */
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -11,6 +12,9 @@ html {
 }
 
 /* Mobile first */
+
+/* --- --- --- Topography --- --- --- */
+
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
@@ -40,6 +44,53 @@ p {
   margin-top: 0;
 }
 
-/* TODO: Responsive for larger screens*/
+/* Responsive for larger screens*/
 
-/* Standart tablet/desktop/laptop screens*/
+/* Responsive 1024px+ Standard */
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* --- --- --- Links --- --- --- */
+
+a {
+  text-decoration: none;
+}
+.links-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.links-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.links-arrow:hover::after {
+  margin-left: 10px;
+}
+
+/* Responsive 1024px+ Standard*/
+
+@media screen and (min-width: 1024px) {
+  .links-arrow {
+    font-size: 1.5rem;
+  }
+}
