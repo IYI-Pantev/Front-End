@@ -434,6 +434,7 @@ a {
   content: "\00A9";
 }
 
+/* Responsive 1024px+ Standard*/
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
@@ -443,5 +444,23 @@ a {
   }
   .quote__company {
     font-size: 1.6rem;
+  }
+}
+
+/* --- --- --- Grids --- --- --- */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
