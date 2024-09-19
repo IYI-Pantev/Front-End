@@ -361,6 +361,13 @@ a {
   right: 5%;
 }
 
+.plan--popular .btn--primary {
+  background-color: #1b0760;
+}
+
+.plan--popular .btn--primary:hover {
+  background-color: #250b84;
+}
 /* Responsive 1024px+ Standard*/
 @media screen and (min-width: 1024px) {
   .plan__name {
