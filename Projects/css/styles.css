@@ -313,6 +313,9 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #076aec;
+}
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
@@ -346,6 +349,18 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url("../icons/popular.svg");
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+
 /* Responsive 1024px+ Standard*/
 @media screen and (min-width: 1024px) {
   .plan__name {
