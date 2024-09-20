@@ -623,6 +623,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .block__heading {
   margin-top: 0;
@@ -804,4 +805,52 @@ a {
 
 .f-list h3 {
   color: #fff;
+}
+
+/* --- --- --- Footer --- --- --- */
+
+.footer {
+  background: #232323;
+}
+.footer h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
