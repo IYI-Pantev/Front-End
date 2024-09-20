@@ -8,6 +8,7 @@
   --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
+  --padding-vertical: 2rem;
 }
 
 *,
@@ -163,6 +164,7 @@ a {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
+
 /* Responsive 1024px+ Standard*/
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
@@ -213,7 +215,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -305,6 +307,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -315,6 +318,9 @@ a {
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
+  }
+  .input .btn {
+    max-width: 45px;
   }
 }
 
@@ -538,8 +544,8 @@ a {
 
 /* --- --- --- Callout --- --- --- */
 .callout {
-  padding: 4rem;
-  border-radius: 5px;
+  padding: 2rem 3rem 1rem;
+  border-radius: 20px;
 }
 
 .callout--primary {
@@ -614,10 +620,17 @@ a {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .collapsible__heading {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+}
+
 /* --- --- --- Blocks --- --- --- */
 
 .block {
-  --padding-vertical: 2rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -654,12 +667,13 @@ a {
 }
 
 /* --- --- --- Navigation Bar --- --- --- */
+
 .nav {
   background: #000;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 1rem;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -673,25 +687,37 @@ a {
   border-bottom: 1px solid #222;
 }
 
+.nav__item:last-of-type {
+  border-bottom: none;
+}
+
 .nav__item > a {
   color: #d2d0db;
   transition: color 0.3s;
 }
+
 .nav__item > a:hover {
   color: #fff;
 }
 
 .nav__toggler {
   opacity: 0.5;
-  transition: all 0.3s;
+  transition: box-shadow 0.15s;
   cursor: pointer;
 }
-.nav__toggler:hover {
+
+.nav.collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
 }
 
-/* @media screen and (min-width: 768px) {
+.nav__brand {
+  transform: translateY(5px);
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
   }
@@ -699,11 +725,13 @@ a {
     width: auto;
     display: flex;
     font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
   }
-  .collapsible__content {
-    display: inline-flex;
+  .nav__item {
+    border: 0;
   }
-} */
+}
 
 /* --- --- --- Hero Banner --- --- --- */
 .hero {
@@ -740,8 +768,9 @@ a {
 }
 
 .block__domain-prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -847,6 +876,10 @@ a {
 }
 .footer a:hover {
   color: #fff;
+}
+
+.footer h2 {
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
