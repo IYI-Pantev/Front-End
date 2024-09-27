@@ -37,13 +37,3 @@
 // }
 // const myCircle = new MyCircle(1);
 // myCircle.draw();
-
-// find
-
-let myObject = { name: "Nick", age: 29, country: "Bulgaria" };
-
-if ("age" in myObject) {
-  console.log("Key age exist in the object");
-} else {
-  console.log(false);
-}
