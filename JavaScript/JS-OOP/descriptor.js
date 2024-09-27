@@ -1,21 +1,20 @@
-let person = {name: 'Mosh'};
+let person = { name: "Mosh" };
 
-Object.defineProperty(person, 'name', {
-    //data descriptors
-    writable: false,
-    enumerable: false,
-    configurable: false
-    // access descriptors
-    //get: function() {return}
-    //set: function(value) {return}
+Object.defineProperty(person, "name", {
+  //data descriptors
+  writable: false, // can't change name Read-Only
+  enumerable: false, // won't show in Object.keys()
+  configurable: false, // can't Delete the property
+  // access descriptors
+  //get: function() {return}
+  //set: function(value) {return}
 });
 
-person.name = 'John';
+person.name = "John";
 console.log(person);
 console.log(Object.keys(person));
 delete person.name;
 console.log(person);
-
 
 // for (let key in person)
 //     console.log(key);

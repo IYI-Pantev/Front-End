@@ -1,34 +1,30 @@
-
 const canEat = {
-    eat: function() {
-        this.hunger--;
-        console.log('eating...');
-    }
+  eat: function () {
+    this.hunger--;
+    console.log("eating...");
+  },
 };
 
 const canWalk = {
-    walk: function() {
-        console.log('walking...');
-    }
+  feet: 2,
+  walk: function () {
+    console.log("walking...");
+  },
 };
 
 const canSwim = {
-    swim: function() {
-        console.log('swimming...')
-    }
-}
+  swim: function () {
+    console.log("swimming...");
+  },
+};
 
-function Person() {
-
-}
+function Person() {}
 
 Object.assign(Person.prototype, canEat, canWalk);
 const person = new Person();
-console.log(person);
+console.log(person.feet);
 
-function Goldfish() {
-
-}
+function Goldfish() {}
 Object.assign(Goldfish, canEat, canSwim);
 
 f = new Goldfish();
