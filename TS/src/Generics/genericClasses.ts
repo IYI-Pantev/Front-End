@@ -4,4 +4,4 @@ class KeyValuePair<K, V> {
   constructor(public key: K, public value: V) {}
 }
 
-let pair = new KeyValuePair<string, number>("1", 11);
+let pair = new KeyValuePair<string, number>("1", 11); // we can skip explicitly giving generics here
