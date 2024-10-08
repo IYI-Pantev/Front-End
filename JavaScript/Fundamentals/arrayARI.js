@@ -1,6 +1,6 @@
 // const numbers = [3, 4];
 
-// //End 0(1)
+// //End O(1)
 // numbers.push(5, 6);
 
 // // Beginning O(n)
@@ -66,13 +66,13 @@
 
 // fitler
 
-// const numbers = [1, -1, 2, 3];
+const numbers = [1, -1, 2, 3];
 
-// const filtered = numbers.filter((n) => n >= 0);
-// // map
-// const items = filtered.map((n) => ({ value: n }));
+const filtered = numbers.filter((n) => n >= 0);
+// map
+const items = filtered.map((n) => ({ value: n }));
 
-// console.log(items);
+console.log(items);
 
 // // maniac js
 
@@ -86,10 +86,10 @@
 // reduce use case
 
 // sum - in python is just sum(numbers)
-const numbers = [1, -1, 2, 3];
+// const numbers = [1, -1, 2, 3];
 
-const sum = numbers.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
-}, 0);
+// const sum = numbers.reduce((accumulator, currentValue) => {
+//   return accumulator + currentValue;
+// }, 0);
 
-console.log(sum);
+// console.log(sum);

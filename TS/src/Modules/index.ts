@@ -2,6 +2,9 @@
 
 import { Circle1 } from "./shapes";
 
+// Wild Card
+// import * as Shapes from "./shapes"
+
 // let crcl = new Circle1(33);
 // console.log(crcl.radius)
 

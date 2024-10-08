@@ -11,8 +11,8 @@ Object.getOwnPropertyDescriptor(obj, "propertyName");
 // To set the attributes for a property:
 Object.defineProperty(obj, "propertyName", {
   configurable: false, // cannot be deleted
-  writable: false,
-  enumerable: false,
+  writable: false, // read-only
+  enumerable: false, // can't be shown in loops
 });
 
 // Constructors have a "prototype" property. It returns the object
