@@ -1,3 +1,4 @@
+//Type anotations
 let sales = 123_124_423; // if num is big we can make space with_
 
 let course: string = "TypeScript";
