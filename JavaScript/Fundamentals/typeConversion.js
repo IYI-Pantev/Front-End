@@ -26,6 +26,7 @@ console.log(x, typeof x);
 x = x - 2;
 console.log(x, typeof x);
 
+console.log(Boolean(NaN));
 console.log(Boolean(null));
 console.log(Boolean(undefined));
 

@@ -1,4 +1,5 @@
-function sum(discount, ...prices) {
+function sum(discount, ...prices) // rest operator must be last formal parameter
+{
   console.log(arguments);
   console.log(prices);
   const sum = prices.reduce((accumulator, value) => accumulator + value);

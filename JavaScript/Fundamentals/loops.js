@@ -7,11 +7,11 @@
 // console.log("- - - ");
 
 // // while loop
-// let count = 0;
-// while (count < 5) {
-//   console.log(count);
-//   count++;
-// }
+let count = 0;
+while (count < 5) {
+  console.log(count);
+  count++;
+}
 
 // console.log("- - -");
 
@@ -25,29 +25,29 @@
 // console.log("- - -");
 
 // for-in - KEYS
-const person = {
-  name: "Mosh",
-  age: 30,
-};
+// const person = {
+//   name: "Mosh",
+//   age: 30,
+// };
 
-for (let key in person) {
-  console.log(key);
-  console.log(person[key]);
-}
+// for (let key in person) {
+//   console.log(key);
+//   console.log(person[key]);
+// }
 
-console.log("- - -");
+// console.log("- - -");
 
-const colors = ["blue", "white", "red"];
+// const colors = ["blue", "white", "red"];
 
-for (c in colors) {
-  console.log(Number(c) + 1, colors[c]);
-}
+// for (c in colors) {
+//   console.log(Number(c) + 1, colors[c]);
+// }
 
-console.log("- - -");
+// console.log("- - -");
 
-// for-of
-const food = ["hamburger", "salad", "lentils"];
+// // for-of
+// const food = ["hamburger", "salad", "lentils"];
 
-for (f of food) {
-  console.log(f);
-}
+// for (f of food) {
+//   console.log(f);
+// }

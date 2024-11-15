@@ -88,8 +88,8 @@ console.log(items);
 // sum - in python is just sum(numbers)
 // const numbers = [1, -1, 2, 3];
 
-// const sum = numbers.reduce((accumulator, currentValue) => {
-//   return accumulator + currentValue;
-// }, 0);
+const sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
 
-// console.log(sum);
+console.log(sum);
