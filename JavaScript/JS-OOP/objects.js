@@ -27,13 +27,16 @@
 // c.draw();
 // console.log(c.radius);
 
-// // Constructor function
-// function MyCircle(radius) {
-//   // console.log('this', this);
-//   this.radius = radius;
-//   this.draw = function () {
-//     console.log(`draw ${this.radius}`);
-//   };
-// }
-// const myCircle = new MyCircle(1);
-// myCircle.draw();
+// Constructor function
+function MyCircle(radius) {
+  // console.log('this', this);
+  this.radius = radius;
+  this.draw = function () {
+    console.log(`draw ${this.radius}`);
+  };
+}
+const myCircle = new MyCircle(1);
+myCircle.color = "green";
+for (k in myCircle) {
+  if (typeof myCircle[k] !== "function") console.log(k, myCircle[k]);
+}
