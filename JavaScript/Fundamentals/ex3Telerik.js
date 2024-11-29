@@ -1,3 +1,8 @@
+// 3 digits balanced num is num[0] + num[2]
+// = num[1]
+// keep summing until no balanced is given
+// print result
+
 // Use gets() to receive one line of input (the input line is always a string)
 // Use "print" instead of "console.log" to print the result
 
